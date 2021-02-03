@@ -2,7 +2,6 @@
 import Distribuciones.Distribucion;
 import Distribuciones.Exponencial;
 import Distribuciones.Normal;
-//import Distribuciones.Poisson;
 
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
@@ -69,7 +68,7 @@ public class Principal extends javax.swing.JFrame {
     int disLlegada;
     int disAtencion;
     Modelo tabla;
-    public McDonalds automac;
+    public Evento automac;
     Object fila[];
     int men;
     String val;
@@ -391,10 +390,6 @@ public class Principal extends javax.swing.JFrame {
                     desvL = Double.parseDouble(jtfLlegadaDesviacion.getText().trim());
                     llegada = new Normal(mediaL, desvL);
                     break;
-                /*case 1:
-                    lambdaL = Double.parseDouble(jtfLlegadaLambda.getText().trim());
-                    llegada = new Poisson(lambdaL);
-                    break;*/
                 case 1:
                     lambdaL = Double.parseDouble(jtfLlegadaLambda.getText().trim());
                     llegada = new Exponencial(lambdaL);
@@ -407,10 +402,6 @@ public class Principal extends javax.swing.JFrame {
                     desvA = Double.parseDouble(jtfAtencionDesviacion.getText().trim());
                     atencion = new Normal(mediaA, desvA);
                     break;
-                /*case 1:
-                    lambdaA = Double.parseDouble(jtfAtencionLambda.getText().trim());
-                    atencion = new Poisson(lambdaA);
-                    break;*/
                 case 1:
                     lambdaA = Double.parseDouble(jtfAtencionLambda.getText().trim());
                     atencion = new Exponencial(lambdaA);
@@ -420,7 +411,7 @@ public class Principal extends javax.swing.JFrame {
         } catch (NumberFormatException nfe) {
             JOptionPane.showMessageDialog(this, "Ingrese parámeros válidos", "ERROR!", JOptionPane.ERROR_MESSAGE);
         }
-        automac = new McDonalds(duracionSim, llegada, atencion);
+        automac = new Evento(duracionSim, llegada, atencion);
 
         cargarTabla();
         ;
