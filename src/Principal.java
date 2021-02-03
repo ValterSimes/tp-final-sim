@@ -2,7 +2,7 @@
 import Distribuciones.Distribucion;
 import Distribuciones.Exponencial;
 import Distribuciones.Normal;
-import Distribuciones.Poisson;
+//import Distribuciones.Poisson;
 
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
@@ -232,7 +232,7 @@ public class Principal extends javax.swing.JFrame {
         jPanelLlegada.add(jtfLlegadaDesviacion);
         jtfLlegadaDesviacion.setBounds(140, 110, 130, 20);
 
-        jcbLlegadaDistribucion.setModel(new javax.swing.DefaultComboBoxModel(new String[]{"Normal", "Poisson", "Exponencial"}));
+        jcbLlegadaDistribucion.setModel(new javax.swing.DefaultComboBoxModel(new String[]{"Normal", "Exponencial"}));
         jcbLlegadaDistribucion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cambioDistribucionLlegada(evt);
@@ -275,7 +275,7 @@ public class Principal extends javax.swing.JFrame {
         jPanelAtencion.add(jtfAtencionDesviacion);
         jtfAtencionDesviacion.setBounds(140, 110, 130, 20);
 
-        jcbAtencionDistribucion.setModel(new javax.swing.DefaultComboBoxModel(new String[]{"Normal", "Poisson", "Exponencial"}));
+        jcbAtencionDistribucion.setModel(new javax.swing.DefaultComboBoxModel(new String[]{"Normal", "Exponencial"}));
         jcbAtencionDistribucion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cambioDistribucionAtencion(evt);
@@ -391,11 +391,11 @@ public class Principal extends javax.swing.JFrame {
                     desvL = Double.parseDouble(jtfLlegadaDesviacion.getText().trim());
                     llegada = new Normal(mediaL, desvL);
                     break;
-                case 1:
+                /*case 1:
                     lambdaL = Double.parseDouble(jtfLlegadaLambda.getText().trim());
                     llegada = new Poisson(lambdaL);
-                    break;
-                case 2:
+                    break;*/
+                case 1:
                     lambdaL = Double.parseDouble(jtfLlegadaLambda.getText().trim());
                     llegada = new Exponencial(lambdaL);
                     break;
@@ -407,11 +407,11 @@ public class Principal extends javax.swing.JFrame {
                     desvA = Double.parseDouble(jtfAtencionDesviacion.getText().trim());
                     atencion = new Normal(mediaA, desvA);
                     break;
-                case 1:
+                /*case 1:
                     lambdaA = Double.parseDouble(jtfAtencionLambda.getText().trim());
                     atencion = new Poisson(lambdaA);
-                    break;
-                case 2:
+                    break;*/
+                case 1:
                     lambdaA = Double.parseDouble(jtfAtencionLambda.getText().trim());
                     atencion = new Exponencial(lambdaA);
                     break;
