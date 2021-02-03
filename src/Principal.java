@@ -202,7 +202,7 @@ public class Principal extends javax.swing.JFrame {
         jPanelAtencion.add(jLabelDisAtencion);
         jLabelDisAtencion.setBounds(20, 20, 75, 20);
 
-        jLabelLambdaAtencion.setText("Lambda (λ):");
+        jLabelLambdaAtencion.setText("Lambda:");
         jPanelLlegada.add(jLabelLambdaAtencion);
         jLabelLambdaAtencion.setBounds(20, 50, 75, 20);
 
@@ -215,7 +215,7 @@ public class Principal extends javax.swing.JFrame {
         jPanelLlegada.add(jtfLlegadaLambda);
         jtfLlegadaLambda.setBounds(140, 50, 130, 20);
 
-        jLabelMediaAtencion.setText("Media (μ) (seg):");
+        jLabelMediaAtencion.setText("Media (seg):");
         jPanelLlegada.add(jLabelMediaAtencion);
         jLabelMediaAtencion.setBounds(20, 80, 110, 20);
 
@@ -223,7 +223,7 @@ public class Principal extends javax.swing.JFrame {
         jPanelLlegada.add(jtfLlegadaMedia);
         jtfLlegadaMedia.setBounds(140, 80, 130, 20);
 
-        jLabelDesvAtencion.setText("Desviacion (σ) (seg):");
+        jLabelDesvAtencion.setText("Desviación (seg):");
         jPanelLlegada.add(jLabelDesvAtencion);
         jLabelDesvAtencion.setBounds(20, 110, 120, 20);
 
@@ -240,13 +240,13 @@ public class Principal extends javax.swing.JFrame {
         jPanelLlegada.add(jcbLlegadaDistribucion);
         jcbLlegadaDistribucion.setBounds(140, 20, 130, 20);
 
-        jLabelDisLlegada.setText("Distribucion:");
+        jLabelDisLlegada.setText("Distribución:");
         jPanelLlegada.add(jLabelDisLlegada);
         jLabelDisLlegada.setBounds(20, 20, 75, 20);
 
         jPanelAtencion.setBorder(javax.swing.BorderFactory.createEtchedBorder(1, new java.awt.Color(0, 50, 100), new java.awt.Color(0, 150, 100)));
         jPanelAtencion.setLayout(null);
-        jLabelLambdaLlegada.setText("Lambda (λ):");
+        jLabelLambdaLlegada.setText("Lambda:");
         jPanelAtencion.add(jLabelLambdaLlegada);
         jLabelLambdaLlegada.setBounds(20, 50, 75, 20);
 
@@ -258,7 +258,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jPanelAtencion.add(jtfAtencionLambda);
         jtfAtencionLambda.setBounds(140, 50, 130, 20);
-        jLabelMediaLlegada.setText("Media (μ) (seg):");
+        jLabelMediaLlegada.setText("Media (seg):");
         jPanelAtencion.add(jLabelMediaLlegada);
         jLabelMediaLlegada.setBounds(20, 80, 110, 20);
 
@@ -266,7 +266,7 @@ public class Principal extends javax.swing.JFrame {
         jPanelAtencion.add(jtfAtencionMedia);
         jtfAtencionMedia.setBounds(140, 80, 130, 20);
 
-        jLabelDesvLlegada.setText("Desviacion (σ) (seg):");
+        jLabelDesvLlegada.setText("Desviación (seg):");
         jPanelAtencion.add(jLabelDesvLlegada);
         jLabelDesvLlegada.setBounds(20, 110, 120, 20);
 
